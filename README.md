@@ -1,2 +1,2 @@
-![Logo](icons/icon-128x128.png)
+![Logo](icons/1.png)
 # Foresight
