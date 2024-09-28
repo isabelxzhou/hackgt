@@ -29,8 +29,8 @@ body {
 }
 
 .logo-image {
-    width: 50px; /* Scale down the logo image */
-    height: 50px; /* Scale down the logo image */
+    width: 100px; /* Scale down the logo image */
+    height: 100px; /* Scale down the logo image */
 }
 
 .scores {
@@ -44,7 +44,7 @@ body {
     margin: 5px 0; /* Reduce margin to fit content */
     padding: 5px; /* Reduce padding to fit content */
     background-color: #ffffff; /* Set category background to white */
-    border-radius: 8px;
+    border-radius: 3px;
     width: 400%;
     text-align: center;
     display: flex;
@@ -80,8 +80,8 @@ body {
 .circle::before {
     content: '';
     position: absolute;
-    width: 30px; /* Further adjust inner circle size */
-    height: 30px; /* Further adjust inner circle size */
+    width: 40px; /* Further adjust inner circle size */
+    height: 40px; /* Further adjust inner circle size */
     background-color: #ffffff; /* Match the category background */
     border-radius: 50%;
 }
