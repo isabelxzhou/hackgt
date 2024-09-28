@@ -1,0 +1,18 @@
+{
+  "name": "Foresight",
+  "description": "Track carbon emissions resulting from your daily web browsing.",
+  "version": "0.1.1",
+  "manifest_version": 2,
+  "background": {
+    "scripts": [ "javascript/background.js" ]
+  },
+  "browser_action": {
+    "default_icon": "icons/1.png",
+    "default_popup": "popup.html",
+    "default_title": "Foresight"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["javascript/contentscript.js"]
+  }]
+}

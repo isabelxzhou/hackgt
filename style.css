@@ -1,0 +1,125 @@
+:root {
+	--primary-color: #afcbe8;
+	--secondary-color: #ddd;
+	--tertiary-color: #b8b8b8;
+	--background-color: #f4abde;
+
+}
+body {
+    background-color: #ffffff; /* Set background to white */
+    color: #000000; /* Set text color to black */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 5px; /* Further reduce padding to fit content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    width: 400px; /* Set width to 400px */
+    height: 400px; /* Set height to 400px */
+    box-sizing: border-box;
+}
+
+.logo-text {
+    font-size: 18px; /* Further reduce font size to fit content */
+    margin-bottom: 5px; /* Further reduce margin to fit content */
+    display: flex;
+    justify-content: center; /* Center the logo */
+    align-items: center; /* Center the logo */
+}
+
+.logo-image {
+    width: 50px; /* Scale down the logo image */
+    height: 50px; /* Scale down the logo image */
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.category {
+    margin: 5px 0; /* Reduce margin to fit content */
+    padding: 5px; /* Reduce padding to fit content */
+    background-color: #ffffff; /* Set category background to white */
+    border-radius: 8px;
+    width: 400%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for aesthetics */
+}
+
+.category-name {
+    font-size: 14px; /* Further reduce font size to fit content */
+    font-weight: bold;
+}
+
+.circle {
+    width: 50px; /* Further reduce circle size */
+    height: 50px; /* Further reduce circle size */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px; /* Reduce margin to fit content */
+    position: relative;
+    transition: background 5s ease-out; /* Add transition for animation */
+    box-shadow: 0 0 0 5px #ffffff; /* Create a rounded edge */
+}
+
+.circle-text {
+    position: absolute;
+    font-size: 12px; /* Adjust font size for score text */
+    color: #000000; /* Set text color to black */
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 30px; /* Further adjust inner circle size */
+    height: 30px; /* Further adjust inner circle size */
+    background-color: #ffffff; /* Match the category background */
+    border-radius: 50%;
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: inherit;
+    mask: radial-gradient(circle, transparent 60%, rgb(255, 255, 255) 60%);
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: inherit;
+    mask: radial-gradient(circle, transparent 60%, black 60%);
+    box-shadow: 0 0 0 5px #ffffff; /* Create a rounded edge */
+}
+
+.circle-1 {
+    background: conic-gradient(#539155 0%, #ade9af 75%, #ddd 75%, #ddd 100%); /* 75% green, 25% light gray */
+}
+
+.circle-2 {
+    background: conic-gradient(#883737 0%, #f1a38b 50%, #ddd 50%, #ddd 100%); /* 50% orange, 50% light gray */
+}
+
+.circle-3 {
+    background: conic-gradient(#46647d 0%, #81b7e3 25%, #ddd 25%, #ddd 100%); /* 25% blue, 75% light gray */
+}
+
+.circle-4 {
+    background: conic-gradient(#71377c 0%, #f17fd5 25%, #ddd 25%, #ddd 100%); /* 25% blue, 75% light gray */
+}
+
