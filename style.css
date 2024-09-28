@@ -8,11 +8,9 @@
 body {
     background: url('bg.png') no-repeat center center fixed;
     background-size: cover;
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 5px; /* Further reduce padding to fit content */
+    margin: 3px;
+    padding: 4px; /* Further reduce padding to fit content */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +22,7 @@ body {
 
 .logo-text {
     font-size: 12px; /* Further reduce font size to fit content */
-    margin-bottom: 5px; /* Further reduce margin to fit content */
+    margin-bottom: 1px; /* Further reduce margin to fit content */
     display: flex;
     justify-content: center; /* Center the logo */
     align-items: center; /* Center the logo */
@@ -117,19 +115,19 @@ body {
 }
 
 .circle-1 {
-    background: conic-gradient(#539155 0%, #ade9af 75%, #ddd 75%, #ddd 100%); /* 75% green, 25% light gray */
+    background: conic-gradient(#7f9f80 0%, #ade9af 75%, #ddd 75%, #ddd 100%); /* 75% green, 25% light gray */
 }
 
 .circle-2 {
-    background: conic-gradient(#883737 0%, #f1a38b 50%, #ddd 50%, #ddd 100%); /* 50% orange, 50% light gray */
+    background: conic-gradient(#b58d8d 0%, #f1a38b 50%, #ddd 50%, #ddd 100%); /* 50% orange, 50% light gray */
 }
 
 .circle-3 {
-    background: conic-gradient(#46647d 0%, #81b7e3 25%, #ddd 25%, #ddd 100%); /* 25% blue, 75% light gray */
+    background: conic-gradient(#748593 0%, #81b7e3 25%, #ddd 25%, #ddd 100%); /* 25% blue, 75% light gray */
 }
 
 .circle-4 {
-    background: conic-gradient(#71377c 0%, #f17fd5 25%, #ddd 25%, #ddd 100%); /* 25% blue, 75% light gray */
+    background: conic-gradient(#947b98 0%, #f17fd5 25%, #ddd 25%, #ddd 100%); /* 25% blue, 75% light gray */
 }
 
 @keyframes rotate {
