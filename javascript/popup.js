@@ -30,11 +30,11 @@ function renderPage() {
 	var corporateCircle = document.getElementById('corporate-circle');
 	var politicalCircle = document.getElementById('political-circle');
 
-	// Example scores, replace with actual logic to calculate scores
-	var environment = (carbonPerPage * 0.8).toFixed(2);
-	var hr = (carbonPerPage * 0.9).toFixed(2);
-	var corporate = (carbonPerPage * 0.7).toFixed(2);
-	var political = (carbonPerPage * 0.6).toFixed(2);
+	// Generate random scores between 1 and 10
+	var environment = getRandomScore();
+	var hr = getRandomScore();
+	var corporate = getRandomScore();
+	var political = getRandomScore();
 
 	environmentScore.innerHTML = environment;
 	hrScore.innerHTML = hr;
@@ -45,6 +45,10 @@ function renderPage() {
 	animateCircle(hrCircle, hr);
 	animateCircle(corporateCircle, corporate);
 	animateCircle(politicalCircle, political);
+}
+
+function getRandomScore() {
+	return (Math.random() * 9 + 1).toFixed(2); // Generates a number between 1 and 10
 }
 
 function animateCircle(circle, score) {
